@@ -1,0 +1,11 @@
+.ProductDetails {
+  width: 100%;
+
+  @include for-normal-layout {
+    width: 50%;
+  }
+
+  @include for-wide-layout {
+    width: 50%;
+  }
+}
