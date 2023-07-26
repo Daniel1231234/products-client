@@ -1,94 +1,126 @@
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .no-wrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .flex.column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .flex.inline-flex {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .align-self-center {
-    align-self: center;
+  align-self: center;
 }
 
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-.flex-end{
-    align-items: flex-end;
+.flex-end {
+  align-items: flex-end;
 }
 
 .clickable {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .sticky {
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    top: 20px;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 20px;
 }
 
 .hide {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .capitalize {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 
 .end {
-    justify-self: flex-end;
+  justify-self: flex-end;
 }
 
 .start {
-    justify-self: flex;
+  justify-self: flex;
 }
 
-
-// List 
+// List
 .clean-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-
-// Text 
+// Text
 .vertical-text {
-    writing-mode: tb-rl;
-    transform: rotate(-180deg);
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
 }
-
 
 .fixed {
-    position: fixed;
+  position: fixed;
 }
 
 .sticky {
-    position: sticky
+  position: sticky;
 }
 
 .relative {
-    position: relative;
+  position: relative;
+}
+
+// Transitions
+.fast-trans {
+  transition: 0.25s all;
+}
+.normal-trans {
+  transition: 0.4s all;
+}
+.slow-trans {
+  transition: 0.7s all;
+}
+
+.simple-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 15px auto;
+
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  input:not([type="checkbox"]),
+  button {
+    padding: 5px 8px;
+    width: 100%;
+  }
+
+  .form-errors {
+    text-align: center;
+    margin-top: 24px;
+    color: red;
+    font-size: 15px;
+  }
 }

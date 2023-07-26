@@ -1,3 +1,22 @@
 .Header {
-    height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  height: 60px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+  .inner-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 20px;
+      color: #fff;
+    }
   }
+}

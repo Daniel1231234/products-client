@@ -5,20 +5,18 @@ $clr3: #fff;
 $clr4: darken($clr3, 40%);
 $clr5: #2d2d2d;
 $clr6: #13430498;
-$clr7: #FF385C;
-$clr8: #EBEBEB;
+$clr7: #ff385c;
+$clr8: #ebebeb;
 $clr9: #717171;
 $clr10: rgb(224, 222, 222);
-$clr11: #DDDDDD;
+$clr11: #dddddd;
 $clr12: #ada9a9;
-
 
 // LAYOUT
 $layoutPadding: 20px;
 
 // LAYOUT BREAKPOINTS
 $break-mobile: 375px;
-$break-staylist: 550px;
 $break-narrow: 744px;
 $break-normal: 950px;
 $break-wide: 1128px;

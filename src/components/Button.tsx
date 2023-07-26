@@ -9,13 +9,20 @@ export enum ButtonVariant {
 interface ButtonProps {
   variant: ButtonVariant;
   onClick?: () => void;
+  disabled?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ variant, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ variant, onClick, disabled }) => {
   const buttonText = variant.charAt(0).toUpperCase() + variant.slice(1);
 
   return (
-    <button className={`Button Button--${variant}`} onClick={onClick}>
+    <button
+      className={`Button Button--${variant} ${
+        disabled ? "Button--disabled" : ""
+      }`}
+      onClick={onClick}
+      disabled={disabled}
+    >
       {buttonText}
     </button>
   );
