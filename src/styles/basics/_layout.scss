@@ -3,7 +3,7 @@
   margin: 0 auto;
   max-width: 1280px;
   background-color: #f5f5f5;
-  height: 100vh;
+  // height: 90vh;
   overflow: hidden;
 
   @include for-mobile-layout {
@@ -37,7 +37,6 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: calc(100vh - 60px);
 
   @include for-mobile-layout {
     flex-direction: column;
@@ -49,10 +48,16 @@
 
   @include for-normal-layout {
     flex-direction: row;
+    height: calc(100vh - 60px);
 
     .left-column,
     .ProductDetails {
       width: 50%;
+    }
+
+    .ProductDetails {
+      height: fit-content;
+      margin: auto;
     }
   }
 

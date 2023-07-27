@@ -53,7 +53,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = () => {
       } else {
         const newProduct = new CreateProduct(
           validateDetails.name,
-          validateDetails.description,
+          validateDetails.description ?? "",
           validateDetails.price
         );
         handleCreateProduct(newProduct);
@@ -70,8 +70,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = () => {
   };
 
   const onSubmit = (data: FormData) => {
-    console.log(data);
-    handleSave(data.name, data.description, data.price);
+    handleSave(data.name, data.description!, data.price);
   };
 
   if (!chosenProduct) return <div>Nothing to show here</div>;

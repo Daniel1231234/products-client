@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  max-height: 100vh;
-}
-
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.8;
@@ -13,7 +9,6 @@ html {
 
 body {
   margin: 0;
-  overflow: hidden;
 }
 
 img {

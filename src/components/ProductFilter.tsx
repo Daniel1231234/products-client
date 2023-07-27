@@ -5,7 +5,7 @@ import AddProductButton from "./AddProductButton";
 
 interface ProductFilterProps {}
 
-const ProductFilter: React.FC<ProductFilterProps> = ({}) => {
+const ProductFilter: React.FC<ProductFilterProps> = () => {
   const { query, setQuery, sortBy, setSortBy } = useContext(ProductContext)!;
   return (
     <div className="ProductFilter">

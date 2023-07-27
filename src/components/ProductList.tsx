@@ -6,7 +6,7 @@ import { ProductContext } from "../context/ProductContext";
 
 interface ProductListProps {}
 
-const ProductList: React.FC<ProductListProps> = ({}) => {
+const ProductList: React.FC<ProductListProps> = () => {
   const {
     products,
     setPage,

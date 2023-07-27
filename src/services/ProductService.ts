@@ -16,6 +16,7 @@ async function getProducts({ query, sortBy, page }: QueryOpts) {
         })
         return response.data
     } catch (err) {
+        console.log(err)
         throw err;
     }
 }

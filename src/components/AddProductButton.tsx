@@ -4,7 +4,7 @@ import { ProductContext } from "../context/ProductContext";
 
 interface AddProductButtonProps {}
 
-const AddProductButton: React.FC<AddProductButtonProps> = ({}) => {
+const AddProductButton: React.FC<AddProductButtonProps> = () => {
   const { handleSetChosenProduct } = useContext(ProductContext)!;
   return (
     <Button
